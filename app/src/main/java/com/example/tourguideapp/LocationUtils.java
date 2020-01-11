@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class LocationUtils {
+class LocationUtils {
     static View generateLocationFragmentView(Context context, LayoutInflater inflater, ViewGroup container, ArrayList<Location> list, int backgroundColor) {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
