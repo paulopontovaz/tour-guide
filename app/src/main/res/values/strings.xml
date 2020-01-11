@@ -7,4 +7,80 @@
     <string name="malls">Malls</string>
     <string name="location_image">Location Image</string>
     <string name="website">Website</string>
+
+    <string name="oxford_pub_name">Oxford Pub - Beer &amp; Burger</string>
+    <string name="oxford_pub_uri">https://www.oxfordpub.de/</string>
+    <string name="oxford_pub_address">Fasanenstraße 6, 76131 Karlsruhe</string>
+
+    <string name="judys_pflug_name">Judy\'s Pflug</string>
+    <string name="judys_pflug_uri">https://judys-pflug.de/</string>
+    <string name="judys_pflug_address">Ochsentorstraße 24, 76227 Karlsruhe</string>
+
+    <string name="guts_and_glory_name">Guts &amp; Glory</string>
+    <string name="guts_and_glory_uri">https://gutsandglory.bar</string>
+    <string name="guts_and_glory_address">Hirschhof 5, 76133 Karlsruhe</string>
+
+    <string name="borsalino_name">Borsalino</string>
+    <string name="borsalino_uri">https://www.borsalino-ka.de</string>
+    <string name="borsalino_address">Karlsruher Allee 1, 76227 Karlsruhe</string>
+
+    <string name="cafe_galerie_name">Cafe Galerie</string>
+    <string name="cafe_galerie_uri">https://cafegalerie.eatbu.com</string>
+    <string name="cafe_galerie_address">Karlsruher Allee 1, 76227 Karlsruhe</string>
+
+    <string name="filmpalast_name">Filmpalast</string>
+    <string name="filmpalast_uri">"https://www.filmpalast.net/"</string>
+    <string name="filmpalast_address">"Brauerstraße 40, 76135 Karlsruhe"</string>
+
+    <string name="schauburg_name">Schauburg</string>
+    <string name="schauburg_uri">http://www.schauburg.de/</string>
+    <string name="schauburg_address">Marienstraße 16, 76137 Karlsruhe</string>
+
+    <string name="universum_name">Universum-City Kinos</string>
+    <string name="universum_uri">https://www.kinopolis.de/ka</string>
+    <string name="universum_address">Kaiserstraße 152–154, 76133 Karlsruhe</string>
+
+    <string name="ettlinger_tor_name">Ettlinger Tor</string>
+    <string name="ettlinger_tor_uri">https://www.ettlinger-tor.de/</string>
+    <string name="ettlinger_tor_address">Karl-Friedrich-Str. 26, 76133 Karlsruhe</string>
+
+    <string name="durlach_center_name">Durlach Center</string>
+    <string name="durlach_center_uri">http://www.durlachcenter.de/</string>
+    <string name="durlach_center_address">Durlacher Allee 111, 76137 Karlsruhe</string>
+
+    <string name="postgalerie_name">"Postgalerie"</string>
+    <string name="postgalerie_uri">"https://postgalerie.de"</string>
+    <string name="postgalerie_address">"Kaiserstraße 217, 76133 Karlsruhe"</string>
+
+    <string name="karlsruhe_castle_name">Karlsruhe Castle</string>
+    <string name="karlsruhe_castle_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Karlsruhe-Palace</string>
+    <string name="karlsruhe_castle_address">Schloßbezirk 10, 76131 Karlsruhe</string>
+
+    <string name="zoo_name">Zoological Gardens Karlsruhe</string>
+    <string name="zoo_uri">https://www.karlsruhe.de/b3/freizeit/zoo.de</string>
+    <string name="zoo_address">Bahnhofplatz 4, 76137 Karlsruhe</string>
+
+    <string name="turmberg_name">Turmberg Castle Ruins</string>
+    <string name="turmberg_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Turmberg-Castle-Ruins</string>
+    <string name="turmberg_address">Reichardtstraße 22, 76227 Karlsruhe</string>
+
+    <string name="botanical_gardens_name">Botanical Gardens</string>
+    <string name="botanical_gardens_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Botanical-Gardens</string>
+    <string name="botanical_gardens_address">Hans-Thoma-Straße 6, 76131 Karlsruhe</string>
+
+    <string name="friedrichsplatz_name">Friedrichsplatz</string>
+    <string name="friedrichsplatz_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Friedrichsplatz-Friedrich-Square</string>
+    <string name="friedrichsplatz_address">Ritterstraße, 76133 Karlsruhe</string>
+
+    <string name="marktplatz_name">Marktplatz</string>
+    <string name="marktplatz_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Market-Square-Marktplatz-and-the-Pyramid</string>
+    <string name="marktplatz_address">Marktplatz, 76133 Karlsruhe</string>
+
+    <string name="ludwigsplatz_name">Ludwigsplatz</string>
+    <string name="ludwigsplatz_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Ludwigsplatz</string>
+    <string name="ludwigsplatz_address">Ludwigsplatz, 76133 Karlsruhe</string>
+
+    <string name="werderplatz_name">Werderplatz</string>
+    <string name="werderplatz_uri">https://www.karlsruhe-erleben.de/en/media/attractions/Werderplatz</string>
+    <string name="werderplatz_address">Werderplatz, 76137 Karlsruhe</string>
 </resources>

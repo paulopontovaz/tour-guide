@@ -1,147 +1,149 @@
 package com.example.tourguideapp;
 
+import android.content.Context;
+
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class LocationFactory {
+class LocationFactory {
 
-    static ArrayList<Location> getRestaurants() {
+    static ArrayList<Location> getRestaurants(Context context) {
         return new ArrayList<>(
                 Arrays.asList(
                         new Location(
-                                "Oxford Pub - Beer & Burger",
-                                URI.create("https://www.oxfordpub.de/"),
-                                "Fasanenstrasse 6, 76131 Karlsruhe",
+                                context.getText(R.string.oxford_pub_name).toString(),
+                                URI.create(context.getText(R.string.oxford_pub_uri).toString()),
+                                context.getText(R.string.oxford_pub_address).toString(),
                                 R.drawable.oxfordpub
                         ),
                         new Location(
-                                "Judy's Pflug",
-                                URI.create("https://judys-pflug.de/"),
-                                "Ochsentorstrasse 24, 76227 Karlsruhe",
+                                context.getText(R.string.judys_pflug_name).toString(),
+                                URI.create(context.getText(R.string.judys_pflug_uri).toString()),
+                                context.getText(R.string.judys_pflug_address).toString(),
                                 R.drawable.judyspflug
                         ),
                         new Location(
-                                "Guts & Glory",
-                                URI.create("https://gutsandglory.bar"),
-                                "Hirschhof 5, 76133 Karlsruhe",
+                                context.getText(R.string.guts_and_glory_name).toString(),
+                                URI.create(context.getText(R.string.guts_and_glory_uri).toString()),
+                                context.getText(R.string.guts_and_glory_address).toString(),
                                 R.drawable.gutsandglory
                         ),
                         new Location(
-                                "Borsalino",
-                                URI.create("https://www.borsalino-ka.de"),
-                                "An der RaumFabrik 33C, 76227 Karlsruhe",
+                                context.getText(R.string.borsalino_name).toString(),
+                                URI.create(context.getText(R.string.borsalino_uri).toString()),
+                                context.getText(R.string.borsalino_address).toString(),
                                 R.drawable.borsalino
                         ),
                         new Location(
-                                "Cafe Galerie",
-                                URI.create("https://cafegalerie.eatbu.com"),
-                                "Karlsruher Allee 1, 76227 Karlsruhe",
+                                context.getText(R.string.cafe_galerie_name).toString(),
+                                URI.create(context.getText(R.string.cafe_galerie_uri).toString()),
+                                context.getText(R.string.cafe_galerie_address).toString(),
                                 R.drawable.cafegalerie
                         )
                 )
         );
     }
 
-    static ArrayList<Location> getCinemas() {
+    static ArrayList<Location> getCinemas(Context context) {
         return new ArrayList<>(
                 Arrays.asList(
                         new Location(
-                                "Filmpalast",
-                                URI.create("https://www.filmpalast.net/"),
-                                "Brauerstraße 40, 76135 Karlsruhe",
+                                context.getText(R.string.filmpalast_name).toString(),
+                                URI.create(context.getText(R.string.filmpalast_uri).toString()),
+                                context.getText(R.string.filmpalast_address).toString(),
                                 R.drawable.filmpalast
                         ),
                         new Location(
-                                "Schauburg",
-                                URI.create("http://www.schauburg.de/"),
-                                "Marienstraße 16, 76137 Karlsruhe",
+                                context.getText(R.string.schauburg_name).toString(),
+                                URI.create(context.getText(R.string.schauburg_uri).toString()),
+                                context.getText(R.string.schauburg_address).toString(),
                                 R.drawable.schauburg
                         ),
                         new Location(
-                                "Universum-City Kinos",
-                                URI.create("https://www.kinopolis.de/ka"),
-                                "Kaiserstraße 152-154, 76133 Karlsruhe",
+                                context.getText(R.string.universum_name).toString(),
+                                URI.create(context.getText(R.string.universum_uri).toString()),
+                                context.getText(R.string.universum_address).toString(),
                                 R.drawable.universumcitykinos
                         )
                 )
         );
     }
 
-    static ArrayList<Location> getMalls() {
+    static ArrayList<Location> getMalls(Context context) {
         return new ArrayList<>(
                 Arrays.asList(
                         new Location(
-                                "Ettlinger Tor",
-                                URI.create("https://www.ettlinger-tor.de/"),
-                                "Karl-Friedrich-Str. 26, 76133 Karlsruhe",
+                                context.getText(R.string.ettlinger_tor_name).toString(),
+                                URI.create(context.getText(R.string.ettlinger_tor_uri).toString()),
+                                context.getText(R.string.ettlinger_tor_address).toString(),
                                 R.drawable.ettlingertor
                         ),
                         new Location(
-                                "Durlach Center",
-                                URI.create("http://www.durlachcenter.de/"),
-                                "Durlacher Allee 111, 76137 Karlsruhe",
+                                context.getText(R.string.durlach_center_name).toString(),
+                                URI.create(context.getText(R.string.durlach_center_uri).toString()),
+                                context.getText(R.string.durlach_center_address).toString(),
                                 R.drawable.durlachcenter
                         ),
                         new Location(
-                                "Postgalerie",
-                                URI.create("https://postgalerie.de"),
-                                "Kaiserstrasse 217, 76133 Karlsruhe",
+                                context.getText(R.string.postgalerie_name).toString(),
+                                URI.create(context.getText(R.string.postgalerie_uri).toString()),
+                                context.getText(R.string.postgalerie_address).toString(),
                                 R.drawable.postgalerie
                         )
                 )
         );
     }
 
-    static ArrayList<Location> getLandmarks() {
+    static ArrayList<Location> getLandmarks(Context context) {
         return new ArrayList<>(
                 Arrays.asList(
                         new Location(
-                                "Karlsruhe Castle",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Karlsruhe-Palace"),
-                                "Schloßbezirk 10, 76131 Karlsruhe",
+                                context.getText(R.string.karlsruhe_castle_name).toString(),
+                                URI.create(context.getText(R.string.karlsruhe_castle_uri).toString()),
+                                context.getText(R.string.karlsruhe_castle_address).toString(),
                                 R.drawable.karlsruhecastle
                         ),
                         new Location(
-                                "Zoological Gardens Karlsruhe",
-                                URI.create("https://www.karlsruhe.de/b3/freizeit/zoo.de"),
-                                "Bahnhofpl. 4, 76137 Karlsruhe",
+                                context.getText(R.string.zoo_name).toString(),
+                                URI.create(context.getText(R.string.zoo_uri).toString()),
+                                context.getText(R.string.zoo_address).toString(),
                                 R.drawable.karlsruhezoo
                         ),
                         new Location(
-                                "Turmberg Castle Ruins",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Turmberg-Castle-Ruins"),
-                                "Reichardtstraße 22, 76227 Karlsruhe",
+                                context.getText(R.string.turmberg_name).toString(),
+                                URI.create(context.getText(R.string.turmberg_uri).toString()),
+                                context.getText(R.string.turmberg_address).toString(),
                                 R.drawable.turmberg
                         ),
                         new Location(
-                                "Botanical Gardens",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Botanical-Gardens"),
-                                "Hans-Thoma-Straße 6, 76131 Karlsruhe",
+                                context.getText(R.string.botanical_gardens_name).toString(),
+                                URI.create(context.getText(R.string.botanical_gardens_uri).toString()),
+                                context.getText(R.string.botanical_gardens_address).toString(),
                                 R.drawable.botanicalgardens
                         ),
                         new Location(
-                                "Friedrichsplatz",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Friedrichsplatz-Friedrich-Square"),
-                                "Ritterstraße, 76133 Karlsruhe",
+                                context.getText(R.string.friedrichsplatz_name).toString(),
+                                URI.create(context.getText(R.string.friedrichsplatz_uri).toString()),
+                                context.getText(R.string.friedrichsplatz_address).toString(),
                                 R.drawable.friedrichsplatz
                         ),
                         new Location(
-                                "Marktplatz",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Market-Square-Marktplatz-and-the-Pyramid"),
-                                "Marktplatz, 76133 Karlsruhe",
+                                context.getText(R.string.marktplatz_name).toString(),
+                                URI.create(context.getText(R.string.marktplatz_uri).toString()),
+                                context.getText(R.string.marktplatz_address).toString(),
                                 R.drawable.marktplatz
                         ),
                         new Location(
-                                "Ludwigsplatz",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Ludwigsplatz"),
-                                "Ludwigsplatz, 76133 Karlsruhe",
+                                context.getText(R.string.ludwigsplatz_name).toString(),
+                                URI.create(context.getText(R.string.ludwigsplatz_uri).toString()),
+                                context.getText(R.string.ludwigsplatz_address).toString(),
                                 R.drawable.ludwigsplatz
                         ),
                         new Location(
-                                "Werderplatz",
-                                URI.create("https://www.karlsruhe-erleben.de/en/media/attractions/Werderplatz"),
-                                "Werderplatz, 76137 Karlsruhe",
+                                context.getText(R.string.werderplatz_name).toString(),
+                                URI.create(context.getText(R.string.werderplatz_uri).toString()),
+                                context.getText(R.string.werderplatz_address).toString(),
                                 R.drawable.werderplatz
                         )
                 )
