@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">Tour Guide App</string>
+    <string name="app_name">Karlsruhe Tour Guide App</string>
     <string name="restaurants">Restaurants</string>
+    <string name="food">Food</string>
     <string name="landmarks">Landmarks</string>
     <string name="cinemas">Cinemas</string>
     <string name="malls">Malls</string>
+    <string name="location_image">Location Image</string>
+    <string name="website">Website</string>
 </resources>

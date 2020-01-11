@@ -13,7 +13,7 @@ public class TabAdapter extends FragmentPagerAdapter {
         super(fm, behavior);
         mTabTitles = new String[] {
                 mContext.getText(R.string.landmarks).toString(),
-                mContext.getText(R.string.restaurants).toString(),
+                mContext.getText(R.string.food).toString(),
                 mContext.getText(R.string.cinemas).toString(),
                 mContext.getText(R.string.malls).toString(),
         };
@@ -24,13 +24,13 @@ public class TabAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position) {
             case 0:
-                return TabFragment.newInstance(LocationFactory.getLandmarks());
+                return new LandmarksTabFragment();
             case 1:
-                return TabFragment.newInstance(LocationFactory.getRestaurants());
+                return new RestaurantsTabFragment();
             case 2:
-                return TabFragment.newInstance(LocationFactory.getCinemas());
+                return new CinemasTabFragment();
             case 3:
-                return TabFragment.newInstance(LocationFactory.getMalls());
+                return new MallsTabFragment();
         }
 
         return new Fragment();
@@ -45,4 +45,6 @@ public class TabAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         return mTabTitles[position];
     }
+
+
 }
