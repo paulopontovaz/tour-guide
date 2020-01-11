@@ -1,10 +1,10 @@
 package com.example.tourguideapp;
 
-import android.location.Address;
-
+import android.os.Parcel;
+import android.os.Parcelable;
 import java.net.URI;
 
-public class Location {
+public class Location implements Parcelable {
     private String mName;
     private URI mWebsite;
     private String mAddress;
@@ -17,19 +17,56 @@ public class Location {
         this.mImageResourceId = mImageResourceId;
     }
 
-    public String getmName() {
+    String getName() {
         return mName;
     }
 
-    public URI getmWebsite() {
+    URI getWebsite() {
         return mWebsite;
     }
 
-    public String getmAddress() {
+    String getAddress() {
         return mAddress;
     }
 
-    public int getmImageResourceId() {
+    int getImageResourceId() {
         return mImageResourceId;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mName);
+        dest.writeString(mAddress);
+        dest.writeString(mWebsite.toString());
+        dest.writeInt(mImageResourceId);
+    }
+
+    private Location(Parcel in) {
+        mName = in.readString();
+        mAddress = in.readString();
+        mImageResourceId = in.readInt();
+
+        String uriStr = in.readString();
+
+        if (uriStr != null) {
+            mWebsite = URI.create(uriStr);
+        }
+    }
+
+    public static final Creator<Location> CREATOR = new Creator<Location>() {
+        @Override
+        public Location createFromParcel(Parcel in) {
+            return new Location(in);
+        }
+
+        @Override
+        public Location[] newArray(int size) {
+            return new Location[size];
+        }
+    };
 }
